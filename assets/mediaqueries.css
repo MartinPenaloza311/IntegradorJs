@@ -1,0 +1,247 @@
+:root {
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --backgroundletter: #00abf0;
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .navbar {
+      gap: 10px;
+    }
+  
+    .cart-icon {
+      border: 0px solid;
+    }
+  
+    .navbar-list {
+      position: absolute;
+      top: 65px;
+      left: 5%;
+      right: 5%;
+      width: 90%;
+      flex-direction: column;
+      background-color: var(--nav-bg);
+      border: 2px solid var(--electric);
+      border-top: 0px;
+      border-radius: 0px 0px 15px 15px;
+      align-items: flex-start;
+      padding: 45px 30px;
+      gap: 25px;
+      z-index: 2;
+      display: none;
+    }
+  
+    .navbar-list a {
+      font-size: 18px;
+    }
+  
+    .menu-label {
+      display: flex;
+      order: 2;
+      cursor: pointer;
+    }
+  
+    .menu-label img {
+      height: 35px;
+      width: 35px;
+      background-color: var(--bg-white);
+      border-radius: 4px;
+    }
+  
+    .open-menu {
+      display: flex;
+    }
+    
+    .hero-info {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .hero-info h1 {
+      width: 90%;
+      max-width: 500px;
+      min-width: unset;
+    }
+  
+    .hero-info p {
+      width: 60%;
+      max-width: 600px;
+    }
+  
+    .hero-card {
+      display: none;
+    }
+  
+    #discover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .discover-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+
+    .categories {
+      flex-wrap: wrap;
+      max-width: 390px;
+    }
+  
+    .category {
+      width: 120px;
+    }
+
+    .about-content {
+      width: 100%;
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+  }
+
+  .about-content h2 {
+      width: 100%;
+      max-width: 700px;
+      min-width: unset;
+  }
+
+  .about-content p {
+      width: 100%;
+      max-width: 600px;
+      min-width: unset;
+  }
+
+  .about-img img {
+      display: none;
+  }
+
+
+  .contact-us {
+    max-width: 750px;
+  }
+    
+  .contact-form h3 {
+    font-weight: 40px;
+}
+}
+
+  
+  /* Celular */
+  @media (max-width: 576px) {
+    .cart {
+      left: 0;
+      width: 100%;
+      border: none;
+    }
+  
+    .cart-item {
+      flex-wrap: wrap;
+    }
+  
+    .hero-info p {
+      width: 70%;
+      max-width: unset;
+    }
+  
+    #discover {
+      width: 80%;
+    }
+  
+    #discover h2 {
+      font-size: 48px;
+      width: 100%;
+    }
+  
+    .discover-text {
+      width: 100%;
+      padding: 10px;
+      line-height: 30px;
+      gap: 50px;
+    }
+  
+    .discover-text a {
+      font-size: 20px;
+    }
+  
+    .discover-cards {
+      gap: 20px;
+    }
+  
+    .discover-cards img {
+      width: 100%;
+    }
+
+
+    .categories {
+      max-width: 300px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .category {
+      width: 120px;
+    }
+  
+    .products-container {
+      width: 80%;
+    }
+  
+    .product {
+      width: 100%;
+    }
+  
+    .product-info h3,
+    .product-info p,
+    .product-info span {
+      font-size: 14px;
+    }
+  
+    .product-user img {
+      height: 24px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+
+
+  @media (max-width: 450px) {
+    .cart {
+      min-width: unset;
+    }
+    .cart-container {
+      align-items: center;
+    }
+    .cart-item {
+      width: 70%;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .item-info {
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,148 @@
+:root {
+  --background: rgb(0, 0, 0, 1);
+  --headercolor : rgb(41, 39, 39);
+  --letterfont : #ededed;
+  --backgroundletter: #00abf0;
+}
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1; 
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+    }
+
+    .show-overlay {
+        display: block;
+    }
+
+    .navbar-list li {
+    position: relative;
+    padding: 0;
+    }
+
+    .navbar-list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--text-white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+    }
+
+    .navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    }
+    
+  /*CARRITO */
+    /*Despues de cambiar el carrito en el html y en styles.css , aplicamos una animación en hover*/
+    .cart-icon {
+    transition: all 0.2s ease-out;
+    }
+
+    .cart-icon:hover {
+        color: var(--electric);
+        border-color: var(--electric);
+        transition: all 0.2s ease-in;
+    }
+
+    /*Botones del carrito*/
+    .quantity-handler {
+    transition: all 0.2s ease-in;
+    }
+
+    .quantity-handler:hover {
+    cursor: pointer;
+    background-color: var(--electric);
+    transition: all 0.2s ease-in;
+    }
+    
+    
+    .btn-add,
+    .hero-info a {
+    transition: all 0.2s ease-out;
+    }
+
+    .btn-add:hover,
+    .hero-info a:hover {
+    background-color: var(--fire);
+    transition: all 0.2s ease-in;
+}
+
+  /* Boton ver mas de la sección de productos */
+    .btn-load {
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}
+
+    .btn-load:hover {
+    background-color: var(--electric);
+    color: var(--text-white);
+    transition: all 0.2s ease-in;
+}
+
+    @keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }   
+    }
+
+    @keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+    }
+
+    .hero-info p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+    }
+
+    .hero-info a {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.4s;
+    }
+
+
+    .product img {
+    transition: all 0.3s linear;
+    }
+
+    .product img:hover {
+    transform: scale(1.02);
+    transition: all 0.3s linear;
+    }
+
+    .hero-info h1 span {
+      position: relative;
+      background: var(--backgroundletter);
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text;
+  }
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Ecommerce</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16x16.png" />
+    <link rel="stylesheet" href="/assets/estilos.css" />
+    <link rel="stylesheet" href="/assets/animaciones.css" />
+    <link rel="stylesheet" href="/assets/mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/Page/Logo.png" alt="Logo gimnasio" class="logo" />
+        <nav class="navbar">
+            <div class="menu-label">
+                <img src="/assets/img/Page/menu.png" alt="" class="menu-icon" />
+            </div>
+
+
+
+        <ul class="navbar-list">
+            <li><a class="navbar-link" href="#hero">Home</a></li>
+            <li><a class="navbar-link" href="#discover">Descubre</a></li>
+            <li><a class="navbar-link" href="#products">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="cart-label">
+
+            <i class="fa-solid fa-cart-shopping cart-icon">
+                <div class="cart-bubble">0</div>
+            </i>
+        </div>
+
+        <div class="cart">
+
+        <h2>Tus Productos</h2>
+
+        <div class="cart-container">
+        </div>
+        <span class="divider"></span>
+        <div class="cart-total">
+            <p>Total:</p>
+            <span class="total">5000 ARS</span>
+        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-delete">Vaciar carrito</button>
+        </div>
+
+        <div class="overlay"></div>
+    </nav>
+    </header>
+
+    <main>
+    <!-- hero -->
+    <section id="hero">
+        <div class="hero-info">
+        <h1>NITRO GYM <span>SUPLEMENTOS</span></h1>
+            <p>Los Mejores Suplementos del Pais <span> · Tienda Oficial ·</span></p>
+        <div class="btn-box">
+            <a href="#products">Encontralos Acá</a>
+        </div>
+        </div>
+        <div class="hero-card">
+        <img src="/assets/img/Page/Foto.PNG" alt="" />
+        <div class="hero-card-info">
+            <div class="hero-card-top">
+                <h3>✔️ Las Mejores Proteinas
+                    <br>
+                    ✔️ Todos los Suplementos que quieras!
+                </h3>
+            </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- discover -->
+    <section id="discover">
+        <!-- discover info text -->
+        <div class="discover-info">
+            <h2>Tu Fuente de Suplementos para una Vida Saludable</h2>
+            <div class="discover-text">
+                <p>Creemos en el poder de la nutrición para transformar vidas. Nuestra misión es proporcionarte productos que respalden tu salud y te ayuden a vivir al máximo. Ya sea que estés buscando mejorar tu rendimiento deportivo, aumentar tu energía, perder peso de manera saludable o fortalecer tu sistema inmunológico, tenemos la solución adecuada para ti.
+                </p>
+                <div class="btn-box">
+                    <a href="#">Anotate Ya</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- products -->
+    <section id="products">
+    <!-- categories -->
+    <h2>Categorias</h2>
+<div class="categories">
+    <button class="category active">Todas</button>
+    <button class="category" data-category="Proteinas">Proteinas</button>
+    <button class="category" data-category="Creatinas">Creatinas</button>
+    <button class="category" data-category="Mass Mutant">Mass Mutant</button>
+    <button class="category" data-category="Pre-Entrenos">Pre-Entrenos</button>
+</div>
+
+    <!-- products -->
+        <div class="products-container">
+
+        </div>
+        <button class="btn-load">Ver Más</button>
+    </section>
+
+    <!-- about Us -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/assets/img/Page/recepcion gym.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre Nosotros</h2>
+            <br>
+            <h3>En Nitro Gym, creemos que el ejercicio físico no solo es importante para mantener un cuerpo fuerte, sino también para fomentar la salud mental y emocional.</h3>
+            <p>En Nitro Gym, nos enorgullece ofrecer un espacio inspirador y motivador donde puedes alcanzar tus metas de fitness y bienestar.
+            </p>
+            <p>Nuestras instalaciones modernas y bien equipadas están diseñadas para brindarte un ambiente acogedor y agradable donde te sientas cómodo/a y motivado/a para entrenar.
+            Ofrecemos una amplia gama de clases y programas de entrenamiento, desde sesiones de cardio de alta intensidad y entrenamiento de fuerza hasta clases de yoga y pilates para mejorar la flexibilidad y la relajación. Además, contamos con entrenamientos personalizados para adaptarnos a tus necesidades individuales y maximizar tus resultados.</p>
+            <div class="btn-box">
+                <a href="login.html">Leer Más</a>
+            </div>
+        </div>
+</section>
+
+<!-- contacto -->
+
+<section id="contacto">
+    
+    <h1 class="logo-contact">Contactate con <span>Nosotros</span></h1>
+    <div class="contact-wrapper">
+        <div class="form__container">
+
+        <form id="formulario" onsubmit="return validarFormulario()">
+            <div class="form__field">
+                <label for="nombre">Nombre:</label>
+        <input type="text" class="form__input" id="nombre" name="nombre" required><br>
+            </div>
+        
+
+            <div class="form__field">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" class="form__input" id="email" name="email" required><br>
+            </div>
+        
+
+            <div class="form__field"> 
+                <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" class="form__input" name="mensaje" rows="4" cols="50" required></textarea><br>
+            </div>
+        
+
+        <input type="submit" class="form__submit__btn" value="Enviar">
+    </form>
+    </div>
+    <div class="contact-info">
+        <h3>Mas Información</h3>
+        <ul>
+            <li><i class='bx bxs-map'></i>Av. Lionel Messi 181222</li>
+            <li><i class='bx bx-envelope'></i>NitroGym@gmail.com</li>
+            <li><i class='bx bxs-phone'></i>11-18122231</li>
+        </ul>
+        <p>No importa tu nivel de condición física o experiencia previa, estamos aquí para ayudarte a alcanzar tus metas. Si estás listo/a para comenzar tu viaje hacia una vida más saludable y activa, ¡te invitamos a unirte a Nitro Gym! Contáctanos hoy mismo para obtener más información y programar una visita. ¡Estamos emocionados de conocerte y ayudarte a lograr tus objetivos de fitness!</p>
+        <p>Nitrogym.com.ar</p>
+    </div>
+    </div>
+</section>
+
+
+    </main>
+    <footer>
+        <div class="footer-content">
+        <h3>Nitro Gym</h3>    
+        <p>Pagina creada ficticia, solamente para uso personal, unicamente para ser evaludada por Nucba.</p>
+        <ul class="socials">
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+        </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 NitroGym. Hecho por <span>Martin Peñaloza</span></p>
+        </div>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/form.js"></script>
+</body>
+
+</html>

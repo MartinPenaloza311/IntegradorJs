@@ -107,19 +107,17 @@ const productsData = [
     
 ];
 
-    
-    // //función para dividir los productos en arrays de "size" productos
-    const divideProductsInParts = (size) => {
-        let productsList = [];
-        for (let i = 0; i < productsData.length; i += size)
-        productsList.push(productsData.slice(i, i + size))
-        return productsList;
-    };
-    
-    // el concepto de ESTADO
-        const appState = {
-        products: divideProductsInParts(6), 
-        currentProductsIndex: 0, 
-        productsLimit: divideProductsInParts(6).length,
-        activeFilter: null
-        };
+const divideProductsInParts = (size) => {
+    let productsList = [];
+    for (let i = 0; i < productsData.length; i += size)
+      productsList.push(productsData.slice(i, i + size))
+    return productsList;
+  };
+  
+  //el concepto de ESTADO
+  const appState = {
+    products: divideProductsInParts(6), 
+    currentProductsIndex: 0, 
+    productsLimit: divideProductsInParts(6).length,
+    activeFilter: null
+  };

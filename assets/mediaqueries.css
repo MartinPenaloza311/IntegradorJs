@@ -23,6 +23,7 @@
   
     .cart-icon {
       border: 0px solid;
+      width: 30px;
     }
   
     .navbar-list {
@@ -73,8 +74,8 @@
     }
   
     .hero-info h1 {
-      width: 90%;
-      max-width: 500px;
+      width: 100%;
+      max-width: 550px;
       min-width: unset;
     }
   
@@ -243,5 +244,75 @@
     .item-info {
       text-align: center;
     }
+
+    .hero-info {
+      width: 100%;
+    }
+
+    .hero-info h1 {
+      max-width: 90%;
+      font-size: 3rem;
+    }
+
+    .discover {
+      max-width: 90%;
+    }
+    .discover-info h2 {
+      font-size: 30px
+    }
+
+    .btn-box a {
+      display: none;
+    }
+
+    #contacto {
+      display: none;
+    }
   }
   
+
+  @media (max-width:280px) {
+    header {
+      padding: 5px;
+    }
+    .hero-info h1 {
+      width: 90%;
+      font-size: 2rem;
+    }
+
+    #discover {
+      width: 90%; 
+    }
+
+    .discover-info h2 {
+      font-size: 2rem;
+      font-weight: 100;
+    }
+
+    #about {
+      font-size: 2rem;
+      max-width: 280px;
+      left: 30px;
+      align-items: center;
+    }
+    .heading h2 {
+      font-weight: 2rem;
+    }
+    .about-content h3 {
+      width: 90%;
+    }
+    .btn-box a {
+      display: none;
+    }
+
+    #contacto {
+      display: none;
+    }
+  }
+
+
+  @media (max-width:1280px) {
+    .hero-card {
+      display: none;
+  }
+  }
